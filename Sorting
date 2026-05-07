@@ -1,0 +1,29 @@
+public class Sorting {
+    public static void main() {
+
+        int[] numbers = {5, 2, 9, 1, 7};
+
+        int n = numbers.length;
+
+        // Bubble Sort
+        for (int i = 0; i < n - 1; i++) {
+
+            for (int j = 0; j < n - i - 1; j++) {
+
+                // Compare adjacent elements
+                if (numbers[j] > numbers[j + 1]) {
+
+                    // Swap elements
+                    int temp = numbers[j];
+                    numbers[j] = numbers[j + 1];
+                    numbers[j + 1] = temp;
+                }
+            }
+        }
+
+        // Print sorted array
+        System.debug("Sorted Numbers:"+arr);
+
+       
+        }
+    }
